@@ -127,32 +127,17 @@
                     </div>
                 </div>
             </div>
-            @include('components.share', [
-                'url' => request()->fullUrl(),
-                'description' => 'This is really cool link',
-                'image' => 'http://placehold.it/300x300?text=Cool+link'
-            ])
-        </div>
 
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script>
-        var popupSize = {
-            width: 780,
-            height: 550
-        };
-        $(document).on('click', '.social-buttons > a', function(e){
-            var
-                verticalPos = Math.floor(($(window).width() - popupSize.width) / 2),
-                horisontalPos = Math.floor(($(window).height() - popupSize.height) / 2);
-            var popup = window.open($(this).prop('href'), 'social',
-                'width='+popupSize.width+',height='+popupSize.height+
-                ',left='+verticalPos+',top='+horisontalPos+
-                ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');
-            if (popup) {
-                popup.focus();
-                e.preventDefault();
-            }
-        });
-    </script>
+            <div id="social-links">
+                <ul>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://jorenvanhocht.be" class="social-button " id=""><span class="fa fa-facebook-official"></span></a></li>
+                    <li><a href="https://twitter.com/intent/tweet?text=my share text&amp;url=http://jorenvanhocht.be" class="social-button " id=""><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://jorenvanhocht.be&amp;title=my share text&amp;summary=dit is de linkedin summary" class="social-button " id=""><span class="fa fa-linkedin"></span></a></li>
+                    <li><a href="https://wa.me/?text=http://jorenvanhocht.be" class="social-button " id=""><span class="fa fa-whatsapp"></span></a></li>    
+                </ul>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="{{ asset('js/share.js') }}"></script>
     </body>
 </html>
