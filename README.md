@@ -1,7 +1,7 @@
 # Laravel Social Share Demo
 
 
-## Meta setting
+## Social meta tags
 ```html
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
