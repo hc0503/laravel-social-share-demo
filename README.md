@@ -1,7 +1,7 @@
 # Laravel Social Share Demo
 
 ## Meta setting
-
+```html
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="SPSCloud Screenwriting competition" />
@@ -14,3 +14,4 @@
 <meta name="twitter:data1" content="David Raynor">
 <meta name="twitter:label2" content="Est. reading time">
 <meta name="twitter:data2" content="1 minute">
+```html
