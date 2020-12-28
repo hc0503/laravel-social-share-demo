@@ -1,5 +1,6 @@
 # Laravel Social Share Demo
 
+
 ## Meta setting
 ```html
 <meta property="og:locale" content="en_US" />
@@ -17,29 +18,14 @@
 <meta name="twitter:data2" content="1 minute">
 ```
 
-## Social share button components
+
+## Social share button
 ```html
-<div class="social-buttons">
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($url) }}"
-       target="_blank">
-       <i class="fa fa-facebook-official"></i>
-    </a>
-    <a href="https://twitter.com/intent/tweet?url={{ urlencode($url) }}"
-       target="_blank">
-        <i class="fa fa-twitter-square"></i>
-    </a>
-    <a href="https://plus.google.com/share?url={{ urlencode($url) }}"
-       target="_blank">
-       <i class="fa fa-google-plus-square"></i>
-    </a>
-    <a href="https://pinterest.com/pin/create/button/?{{ 
-        http_build_query([
-            'url' => $url,
-            'media' => $image,
-            'description' => $description
-        ]) 
-        }}" target="_blank">
-        <i class="fa fa-pinterest-square"></i>
-    </a>
+<div id="social-links">
+    <ul>
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://app.spscloud.io" class="social-button " id=""><span class="fa fa-facebook-official"></span></a></li>
+        <li><a href="https://twitter.com/intent/tweet?url=https://app.spscloud.io/competition-rules-and-terms" class="social-button " id=""><span class="fa fa-twitter"></span></a></li>
+        <li><a href="https://www.instagram.com/bad_hat_films/" class="social-button " id=""><span class="fa fa-instagram"></span></a></li>
+    </ul>
 </div>
 ```
